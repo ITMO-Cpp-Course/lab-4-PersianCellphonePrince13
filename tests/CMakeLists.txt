@@ -9,6 +9,9 @@ FetchContent_MakeAvailable(catch2)
 
 add_executable(resource_tests
         tests.cpp
+        catch2/catch.hpp
+        catch_main.cpp
+        catch_main.cpp
 )
 
 target_link_libraries(resource_tests PRIVATE resource_core project_warnings Catch2::Catch2WithMain)
